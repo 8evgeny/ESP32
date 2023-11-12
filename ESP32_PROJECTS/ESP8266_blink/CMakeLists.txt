@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
-set(CMAKE_TOOLCHAIN_FILE /home/evg/arduino-cmake-master/cmake/ArduinoToolchain.cmake)
 project(blink C CXX)
 include_directories(include)
 
-set(CMAKE_TOOLCHAIN_FILE /home/evg/arduino-cmake-master/cmake/ArduinoToolchain.cmake)
+set(CMAKE_TOOLCHAIN_FILE ../../esp-idf/tools/cmake/toolchain-esp32.cmake)
 set(POJECT_NAME blink)
 set(CMAKE_C_COMPILER avr-gcc)
 set(CMAKE_CXX_COMPILER avr-g++)
