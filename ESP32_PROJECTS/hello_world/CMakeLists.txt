@@ -4,9 +4,7 @@ cmake_minimum_required(VERSION 3.16)
 message("Environment variable IDF_PATH: $ENV{IDF_PATH}")
 
 #include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-
-#execute_process(COMMAND sh ${CMAKE_SOURCE_DIR}/export.sh)
-
+execute_process(COMMAND  "sh ${CMAKE_SOURCE_DIR}/start.sh")
 set (tools "/home/evg/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf")
 
 #set(CMAKE_C_COMPILER ${tools}/bin/arm-none-eabi-gcc)
